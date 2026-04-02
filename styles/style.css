@@ -43,7 +43,7 @@
 .header_logo-image {
   width:100%;
 }
-.header_address { 
+.header_address {
   font-size: 18px;
   line-height: 1.35;
   justify-self: end;
@@ -203,8 +203,6 @@
 .card__text {
   position: absolute;
   z-index: 2;
-  font-size: 22px;
-  line-height: 120%;
   font-size: 20px;
   line-height: 24px;
   color: #ffff;
@@ -280,7 +278,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   margin:  180px 24px 0 24px;
 }
-.address { 
+.address {
   font-size: 18px;
   line-height: 1.35;
   width: 264px;
@@ -314,7 +312,6 @@
   position: relative;
   display: flex;
   list-style-type: none;
-  display: flex;
   justify-self: end;
   gap: 48px;
   width:240px;
