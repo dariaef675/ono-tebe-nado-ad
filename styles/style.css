@@ -1,1 +1,354 @@
 /* место для вашего кода */
+.header{
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  background-color: #ffff;
+  font-weight: 400;
+  height: 293px;
+  max-width: 1100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+.content-section{
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header__links-list{
+  display: flex;
+  justify-content: space-between;
+  width: 392px;
+  gap: 14px;
+  list-style-type: circle;
+  margin-top: 133px;
+  justify-self: start;
+  margin-bottom: 138px;
+
+}
+
+.header__links-list-item{
+  text-underline-offset: 4px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header__links-list-item_no-bullit{
+  text-decoration: none;
+  list-style-type: none;
+}
+.header_logo{
+  display: block;
+  width: 148px;
+  height: 105px;
+
+}
+.header_logo-image{
+  width:100%;
+}
+.header_address{ 
+  font-size: 18px;
+  line-height: 1.35;
+  justify-self: end;
+  align-self: center; 
+  width: 240px;
+  text-underline-offset: 4px;
+  margin-top: 95px;
+  margin-bottom: 100px;
+}
+
+
+.cover{
+  position: relative;
+  background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  width: 1100px;
+  height: 757px;
+
+}
+.overlay{
+  position: absolute;
+  width: 1100px;
+  height: 757px;
+  background-color: rgb(0 0 0/0.6);
+  z-index: 1;
+}
+
+.cover__title {
+  width: 1000px;
+  position:absolute;
+  font-size: 100px;
+  line-height: 115%;
+  color: #ffff;
+  padding: 165px 50px 207px 50px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.aligned-text{
+  display: block;
+  text-align: left;
+  letter-spacing: 30px;
+  padding-bottom: 20px;
+}
+.aligned-text_center{
+  display: block;
+  text-align: center;
+  letter-spacing: 30px;
+  padding-bottom: 20px;
+  margin-right: -30px;
+}
+.aligned-text_right{
+  display: block;
+  text-align: right;
+  letter-spacing: 30px;
+  margin-right: -30px;
+}
+
+
+.description_text{
+  position: absolute;
+  font-size: 22px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  color: #ffff;
+  width: 637px;
+  z-index: 2;
+  top: 668px;
+  right: 413px;
+  bottom:61px;
+  left: 50px;
+  word-spacing: 18.5px;
+  text-wrap: nowrap;
+}
+.description_button{
+  box-sizing: border-box;
+  position: absolute;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffff;
+  z-index: 2;
+  border: solid 1px #ffff;
+  top: 656px;
+  left: 794px;
+  right: 50px;
+  background-color: transparent;
+  padding:12px 32px 11px 31px;
+}
+.lots{
+  width: 1052px;
+  height: 723px;
+  margin: 180px 24px 120px 24px;
+  
+}
+.lots__heading{
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 0 173px 27px 40px;
+}
+.lots__card-list{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+.lots__card-list-item{
+  width: 334px;
+  height: 596px;
+  position: relative;
+}
+.lots__overlay{
+  width: 334px;
+  height: 596px;
+  position: absolute;
+  background-color: rgb(0 0 0/0.6);
+  z-index: 1;
+}
+.card-link{
+  max-width: 100%;
+  max-height: 100%;
+}
+.card{
+  display: flex;
+  position: relative;
+  max-width:100%;
+  max-height: 100%;
+  z-index:0;
+}
+.card_type_film{
+  position: absolute;
+  width: 334px;
+  height: 596px;
+  max-width:100%;
+  object-fit: fill;
+}
+.card_type_book{
+  width: 334px;
+  height: 596px;
+  max-width:100%;
+  object-fit: fill;
+
+}
+.card_type_picture{
+  width: 334px;
+  height: 596px;
+  max-width:100%;
+  object-fit: fill;
+
+}
+.card__title{
+  position: absolute;
+  z-index: 2;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #ffff;
+  top: 48px;
+  padding: 0 40px 466px 40px;
+  font-size: 22px;
+  line-height: 26px ;
+  font-weight: 700;
+
+}
+.card__text{
+  position: absolute;
+  z-index: 2;
+  font-size: 22px;
+  line-height: 120%;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffff;
+  bottom: 48px;
+  padding: 404px 40px 0 40px;
+}
+.lots__look-more-link{
+  position: absolute;
+  text-decoration: underline;
+  margin-top: 30px;
+  padding-left: 16px;
+  width: 192px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+  text-underline-offset: 4px;
+  
+}
+.about{
+  width: 1052px;
+  height: 595px;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+}
+.about__column{
+  grid-template-columns: 334px 1fr;
+}
+
+.about__logo{
+  grid-column: 1;
+  background-color: #000;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 47px;
+}
+.about__main{
+  grid-column: 2;
+}
+.about__logo-image{
+  display: block;
+  width: 148px;
+  height: 114px;
+  /*padding: 64px 45.52px 52px 46.48px;*/ 
+}
+
+.about__title{
+  position: absolute;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  top: 136px;
+  left: 359px;
+}
+.about__text{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 24px;
+  top: 283px;
+  right: 359px;
+  gap: 24px;
+  width: 688px;
+  left: 359px;
+  word-wrap: break-word; 
+}
+
+.footer{
+  max-width: 100%;
+  height: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:  180px 24px 0 24px;
+}
+.address{ 
+  font-size: 18px;
+  line-height: 1.35;
+  width: 264px;
+  text-underline-offset: 4px;
+  justify-self: start;
+  position: relative;
+  left: 13px;
+
+}
+.footer__menu{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  text-underline-offset: 4px;
+}
+.footer__menu-list{
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  list-style-type: none;
+
+}
+.footer__menu-list-item{
+  flex-direction: column;
+  width: 163.9px;
+}
+.footer__menu-link{
+  text-decoration-line: none;
+  list-style-type: none;
+  text-underline-offset: 4px;
+}
+.footer__menu-link-active{
+}
+.footer__social-list{
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  width:240px;
+  right: 26px;
+
+}
+.footer__social-link{
+
+}
+.footer__social-icon{
+  
+}
