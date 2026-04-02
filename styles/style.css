@@ -269,7 +269,6 @@
   display: block;
   width: 148px;
   height: 114px;
-  /*padding: 64px 45.52px 52px 46.48px;*/ 
 }
 
 .about__title{
@@ -333,8 +332,6 @@
   list-style-type: none;
   text-underline-offset: 4px;
 }
-.footer__menu-link-active{
-}
 .footer__social-list{
   position: relative;
   display: flex;
@@ -344,11 +341,4 @@
   gap: 48px;
   width:240px;
   right: 26px;
-
-}
-.footer__social-link{
-
-}
-.footer__social-icon{
-  
 }
